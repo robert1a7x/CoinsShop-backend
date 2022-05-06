@@ -7,6 +7,13 @@ const getAllProducts = async (): Promise<Product[]> => {
   return products as unknown as Product[];
 };
 
+const createProduct = async (data: Product) => {
+  const createdProduct = await productsModel.createProduct(data);
+
+  return createdProduct;
+};
+
 export = {
   getAllProducts,
+  createProduct,
 };

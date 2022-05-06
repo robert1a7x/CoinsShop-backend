@@ -1,5 +1,5 @@
 import express from 'express';
-require('express-async-errors');
+// require('express-async-errors');
 import productsController from './controllers/productsController';
 import errorMiddleware from './middlewares/errorMiddleware';
 
@@ -10,6 +10,7 @@ app.use(express.json());
 
 // routes
 app.get('/products', productsController.getAllProducts);
+app.post('/products', productsController.createProduct);
 
 // res middlewares
 app.use(errorMiddleware);
