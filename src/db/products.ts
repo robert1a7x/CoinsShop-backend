@@ -26,12 +26,12 @@ const ProductsModel = (sequelize: Sequelize) => {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      coins: {
+      createdAt: {
         allowNull: false,
-        type: DataTypes.INTEGER,
+        type: DataTypes.DATE(3),
       },
     },
-    { timestamps: false, tableName: 'users' }
+    { timestamps: false, tableName: 'products' }
   );
 
   return model;

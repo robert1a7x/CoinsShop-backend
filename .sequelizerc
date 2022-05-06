@@ -6,7 +6,7 @@ const basePath = path.resolve(__dirname, 'sequelize');
 
 module.exports = {
 	url: process.env.MYSQL_URI,
-	'models-path': path.resolve(__dirname, 'src', 'models'),
+	'models-path': path.resolve(__dirname, 'src', 'db'),
 	'seeders-path': path.resolve(basePath, 'seeders'),
 	'migrations-path': path.resolve(basePath, 'migrations')
 }

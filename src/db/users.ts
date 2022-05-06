@@ -26,9 +26,9 @@ const UsersModel = (sequelize: Sequelize) => {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      image: {
+      coins: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
       },
     },
     { timestamps: false, tableName: 'users' }
