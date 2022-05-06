@@ -1,0 +1,12 @@
+const path = require('path');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const basePath = path.resolve(__dirname, 'sequelize');
+
+module.exports = {
+	url: process.env.MYSQL_URI,
+	'models-path': path.resolve(__dirname, 'src', 'models'),
+	'seeders-path': path.resolve(basePath, 'seeders'),
+	'migrations-path': path.resolve(basePath, 'migrations')
+}
