@@ -27,3 +27,8 @@ export type ErrCode = {
   errCode: number;
   message: string;
 };
+
+export type Login = {
+  email: string;
+  password: string;
+};
