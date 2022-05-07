@@ -14,7 +14,7 @@ const createProduct = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): Promise<Response | void> => {
   const createdProduct = await productsService.createProduct(req.body);
 
   if (createdProduct.errCode) return next(createdProduct);
