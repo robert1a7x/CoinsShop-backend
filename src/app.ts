@@ -13,6 +13,7 @@ app.use(express.json());
 app.get('/products', productsController.getAllProducts);
 app.post('/products', productsController.createProduct);
 
+app.put('/users/:id', usersController.updateCoins);
 app.get('/users', usersController.getAllUsers);
 
 // res middlewares

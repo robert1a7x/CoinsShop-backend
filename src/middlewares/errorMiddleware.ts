@@ -8,10 +8,10 @@ const errorMiddleware = (
   _next: NextFunction
 ) => {
   if (err.errCode) {
-    return res.status(err.errCode).json({ message: err.message });
+    return res.status(err.errCode).json({ error: err.message });
   }
 
-  return res.status(500).json({ message: 'Internal server error' });
+  return res.status(500).json({ error: 'Internal server error' });
 };
 
 export default errorMiddleware;
