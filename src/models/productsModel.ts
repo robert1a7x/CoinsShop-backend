@@ -7,13 +7,13 @@ const getAllProducts = async (): Promise<Product[]> => {
   return products as unknown as Product[];
 };
 
-const createProduct = async (data: Product) => {
+const createProduct = async (data: Product): Promise<Product> => {
   const createdProduct = await Products.create({
     ...data,
     createdAt: new Date(),
   });
 
-  return createdProduct;
+  return createdProduct as unknown as Product;
 };
 
 export = { getAllProducts, createProduct };

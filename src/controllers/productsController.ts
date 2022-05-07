@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import productsService from '../services/productsService';
 
 const getAllProducts = async (
@@ -10,8 +10,14 @@ const getAllProducts = async (
   return res.status(200).json(products);
 };
 
-const createProduct = async (req: Request, res: Response) => {
+const createProduct = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   const createdProduct = await productsService.createProduct(req.body);
+
+  if (createdProduct.errCode) return next(createdProduct);
 
   return res.status(201).json(createdProduct);
 };
