@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import { Product } from '../types';
+import { Login, Product } from '../types';
 
 const validateProductData = ({ name, description, price, image }: Product) =>
   Joi.object({
@@ -9,4 +9,10 @@ const validateProductData = ({ name, description, price, image }: Product) =>
     image: Joi.string().required(),
   }).validate({ name, description, price, image });
 
-export { validateProductData };
+const validateLogin = ({ email, password }: Login) =>
+  Joi.object({
+    email: Joi.string().email().required(),
+    password: Joi.string().length(6).required(),
+  }).validate({ email, password });
+
+export { validateProductData, validateLogin };
