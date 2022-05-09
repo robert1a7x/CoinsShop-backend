@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node ./src",
     "test": "mocha -r ts-node/register ./tests/**/*.test.ts",
     "db": "sequelize db:drop && sequelize db:create && sequelize db:migrate",
     "seed": "npx sequelize-cli db:seed:all"
