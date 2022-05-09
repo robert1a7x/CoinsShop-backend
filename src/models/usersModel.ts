@@ -14,7 +14,7 @@ const getAllUsers = async (): Promise<User[]> => {
   return users as unknown as User[];
 };
 
-const updateCoins = async (id: number, coins: number) => {
+const updateCoins = async (id: number, coins: number): Promise<number> => {
   const [updatedCoins] = await Users.update({ coins }, { where: { id } });
 
   return updatedCoins;

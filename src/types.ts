@@ -11,8 +11,6 @@ export type Product = Entity & {
   description: string;
   price: number;
   image: string;
-  errCode?: number;
-  message?: string;
 };
 
 export type User = Indexable & {
