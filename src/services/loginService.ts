@@ -10,7 +10,7 @@ const login = async (loginData: Login): Promise<string | ErrCode> => {
 
   const user = await usersModel.getUser(loginData);
 
-  if (!user) return { errCode: 404, message: 'Invalid login or password' };
+  if (!user) return { errCode: 401, message: 'Invalid login or password' };
 
   const token = createToken({ ...user });
 

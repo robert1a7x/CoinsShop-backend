@@ -16,3 +16,8 @@ export const listOfProductsMock = [
     image: 'image.jpg',
   },
 ];
+
+export const loginDataMock = {
+  email: 'email@email.com',
+  password: '123456',
+};
