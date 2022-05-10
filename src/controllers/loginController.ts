@@ -6,11 +6,11 @@ const login = async (
   res: Response,
   next: NextFunction
 ): Promise<Response | void> => {
-  const token: any = await loginService.login(req.body);
+  const user: any = await loginService.login(req.body);
 
-  if (token.errCode) return next(token);
+  if (user.errCode) return next(user);
 
-  return res.status(200).json({ token });
+  return res.status(200).json(user);
 };
 
 export = {
