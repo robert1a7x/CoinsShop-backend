@@ -1,15 +1,17 @@
 import express from 'express';
-//require('express-async-errors');
+require('express-async-errors');
 import productsController from './controllers/productsController';
 import usersController from './controllers/usersController';
 import errorMiddleware from './middlewares/errorMiddleware';
 import loginController from './controllers/loginController';
 import authMiddleware from './middlewares/authMiddlware';
+import cors from 'cors';
 
 const app = express();
 
 //req middlewares
 app.use(express.json());
+app.use(cors());
 
 // routes
 app.get('/products', authMiddleware, productsController.getAllProducts);
