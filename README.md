@@ -83,11 +83,11 @@ Exemplo de retorno com sucesso:
 ```json
 {
   "user": {
-	"id": 1,
-	"name": "user",
-	"email": "user@user.com",
-	"role": "user",
-	"coins": 9999
+     "id": 1,
+     "name": "user",
+     "email": "user@user.com",
+     "role": "user",
+     "coins": 9999
    },
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo1LCJkaXNwbGF5TmFtZSI6InVzdWFyaW8gZGUgdGVzdGUiLCJlbWFpbCI6InRlc3RlQGVtYWlsLmNvbSIsImltYWdlIjoibnVsbCJ9LCJpYXQiOjE2MjAyNDQxODcsImV4cCI6MTYyMDY3NjE4N30.Roc4byj6mYakYqd9LTCozU1hd9k_Vw5IWKGL4hcCVG8"
 }
@@ -134,20 +134,20 @@ ___
 Exemplo de retorno com sucesso:
 ```json
 [
-	{
-		"id": 1,
-		"name": "user",
-		"email": "user@user.com",
-		"role": "user",
-		"coins": 500
-	},
-	{
-		"id": 2,
-		"name": "admin",
-		"email": "admin@admin.com",
-		"role": "admin",
-		"coins": 9999
-	}
+  {
+     "id": 1,
+     "name": "user",
+     "email": "user@user.com",
+     "role": "user",
+     "coins": 500
+  },
+  {
+     "id": 2,
+     "name": "admin",
+     "email": "admin@admin.com",
+     "role": "admin",
+     "coins": 9999
+  }
 ]
 ```
 ---
@@ -216,22 +216,22 @@ ___
 Exemplo de retorno com sucesso:
 ```json
 [
-	{
-		"id": 1,
-		"name": "Produto 1",
-		"description": "Descrição produto 1",
-		"price": 90,
-		"image": "https://image.com/image1.jpg",
-		"createdAt": "2021-08-01T19:58:00.000Z"
-	},
-	{
-		"id": 2,
-		"name": "Produto 2",
-		"description": "Descrição produto 2",
-		"price": 90,
-		"image": "https://image.com/image2.jpg",
-		"createdAt": "2021-08-01T19:58:00.000Z"
-	}
+  {
+     "id": 1,
+     "name": "Produto 1",
+     "description": "Descrição produto 1",
+     "price": 90,
+     "image": "https://image.com/image1.jpg",
+     "createdAt": "2021-08-01T19:58:00.000Z"
+  },
+  {
+     "id": 2,
+     "name": "Produto 2",
+     "description": "Descrição produto 2",
+     "price": 90,
+     "image": "https://image.com/image2.jpg",
+     "createdAt": "2021-08-01T19:58:00.000Z"
+  }
 ]
 ```
 ---
@@ -257,22 +257,22 @@ Além disso, o `body` da requisição deve ter o seguinte formato:
 
 ```json
 {
-	"name": "Novo Produto",
-	"description": "Descrição novo produto",
-	"price": 200,
-	"image": "https://image.com/image1.png"
+   "name": "Novo Produto",
+   "description": "Descrição novo produto",
+   "price": 200,
+   "image": "https://image.com/image1.png"
 }
 ```
  
 Exemplo de retorno com sucesso:
 ```json
 {
-	"id": 1,
-	"name": "Novo Produto",
-	"description": "Descrição novo produto",
-	"price": 200,
-	"image": "https://image.com/image1.png",
-	"createdAt": "2022-05-07T16:35:43.259Z"
+   "id": 1,
+   "name": "Novo Produto",
+   "description": "Descrição novo produto",
+   "price": 200,
+   "image": "https://image.com/image1.png",
+   "createdAt": "2022-05-07T16:35:43.259Z"
 }
 ```
 #### Regras:
