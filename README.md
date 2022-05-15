@@ -217,20 +217,20 @@ Exemplo de retorno com sucesso:
 ```json
 [
 	{
-	"id": 1,
-	"name": "Produto 1",
-	"description": "Descrição produto 1",
-	"price": 90,
-	"image": "https://image.com/image1.jpg",
-	"createdAt": "2021-08-01T19:58:00.000Z"
+		"id": 1,
+		"name": "Produto 1",
+		"description": "Descrição produto 1",
+		"price": 90,
+		"image": "https://image.com/image1.jpg",
+		"createdAt": "2021-08-01T19:58:00.000Z"
 	},
 	{
-	"id": 2,
-	"name": "Produto 2",
-	"description": "Descrição produto 2",
-	"price": 90,
-	"image": "https://image.com/image2.jpg",
-	"createdAt": "2021-08-01T19:58:00.000Z"
+		"id": 2,
+		"name": "Produto 2",
+		"description": "Descrição produto 2",
+		"price": 90,
+		"image": "https://image.com/image2.jpg",
+		"createdAt": "2021-08-01T19:58:00.000Z"
 	}
 ]
 ```
