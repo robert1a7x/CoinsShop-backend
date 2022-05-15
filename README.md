@@ -43,7 +43,7 @@ JWT_SECRET=secret
 ```bash
 npm run db
 ```
-Este comando vai automaticamente criar o bando de dados da API e criar todas as tabelas.
+Este comando vai automaticamente criar o bando de dados da API e todas as tabelas.
 
 Caso queira automaticamente incluir alguns dados para teste nas tabelas, basta rodar o seguinte comando: 
 
