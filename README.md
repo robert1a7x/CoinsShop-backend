@@ -115,7 +115,7 @@ Quando os dados de login estão incorretos:
 ###  GET `/users`
 Rota responsável por listar todos os usuários cadastrados na tabela `users`. Para realizar a listagem será necessário possuir um token, que é gerado ao realizar o login do usuário, e incluí-lo nos `headers` da requisição com a chave `authorization`.
 
-![exemplo headers token](./public/token-getuser.png)
+![exemplo headers token](./public/getuser.png)
 
 Quando o token não é informado na requisição:
 ```json
@@ -154,7 +154,7 @@ Exemplo de retorno com sucesso:
 ###  PUT `/users/:id`
 Rota responsável por atualizar as moedas dos usuários na tabela `users` com base no id. Para realizar a atualização será necessário possuir um token, que é gerado ao realizar o login do usuário, e incluí-lo nos `headers` da requisição com a chave `authorization`.
 
-![exemplo headers token](./public/token-putuser.png)
+![exemplo headers token](./public/putuser.png)
 
 Quando o token não é informado na requisição:
 ```json
@@ -197,7 +197,7 @@ ___
 ###  GET `/products`
 Rota responsável por listar todos os produtos cadastrados na tabela `products`. Para realizar a listagem será necessário possuir um token, que é gerado ao realizar o login do usuário, e incluí-lo nos `headers` da requisição com a chave `authorization`.
 
-![exemplo headers token](./public/token-getproducts.png)
+![exemplo headers token](./public/getproducts.png)
 
 Quando o token não é informado na requisição:
 ```json
@@ -238,7 +238,7 @@ Exemplo de retorno com sucesso:
 ###  POST `/products`
 Rota responsável por cadastrar um novo produto na tabela `products`. Para realizar o cadastro será necessário possuir um token, que é gerado ao realizar o login do usuário, e incluí-lo nos `headers` da requisição com a chave `authorization`.
 
-![exemplo headers token](./public/token-postproducts.png)
+![exemplo headers token](./public/postproducts.png)
 
 Quando o token não é informado na requisição:
 ```json
