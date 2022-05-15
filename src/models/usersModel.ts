@@ -9,7 +9,7 @@ const getUser = async ({ email }: Login): Promise<User | null> => {
 };
 
 const getAllUsers = async (): Promise<User[]> => {
-  const users = Users.findAll();
+  const users = Users.findAll({ attributes: { exclude: ['password'] } });
 
   return users as unknown as User[];
 };
